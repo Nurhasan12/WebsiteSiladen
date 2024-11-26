@@ -31,6 +31,7 @@
           <li class="nav-item">
             <a class="nav-link" href="<?= BASE_URL ?>/mahasiswa">Student</a>
           </li>
+
           <!-- <li class="nav-item">
             <a class="nav-link" href="<?= BASE_URL ?>/mahasiswa/tambah">tambah</a>
           </li> -->

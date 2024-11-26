@@ -8,7 +8,7 @@ class Mahasiswa extends Controller
     $data['mhs'] = $this->models('Mahasiswa_model')->getAllMahasiswa();
     $this->view('templates/header', $data);
     $this->view('mahasiswa/index', $data);
-    $this->view('templates/footer');
+    $this->view('templates/footer', $data);
   }
 
   public function tambah()
@@ -26,7 +26,6 @@ class Mahasiswa extends Controller
     $data['mhs'] = $this->models('Mahasiswa_model')->getMahasiswaById($id);
     $this->view('templates/header', $data);
     $this->view('mahasiswa/detail', $data);
-    $this->view('templates/footer');
   }
 
   // method Tambah data

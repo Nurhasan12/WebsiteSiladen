@@ -2,7 +2,7 @@
 
 class About extends Controller
 {
-  public function index($nama = 'Rifki', $pekerjaan = 'Mahasiswa')
+  public function index()
   {
     $data['title'] = 'About';
     $data['blog'] = $this->models('About_model')->getAllBlog();
@@ -17,6 +17,15 @@ class About extends Controller
     $data['blog'] = $this->models('About_model')->getAllBlog();
     $this->view('templates/header', $data);
     $this->view('about/page', $data);
+    $this->view('templates/footer');
+  }
+
+  public function detail($id_blog)
+  {
+    $data['title'] = 'Detail';
+    $data['blog'] = $this->models('About_model')->getBlogById($id_blog);
+    $this->view('templates/header', $data);
+    $this->view('about/detail', $data);
     $this->view('templates/footer');
   }
 

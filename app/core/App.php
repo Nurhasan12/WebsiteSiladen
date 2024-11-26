@@ -10,12 +10,12 @@ class App
   {
     $url = $this->parseURL();
 
-    if (isset($url[0]) && file_exists('../app/controller/' . $url[0] . '.php')) {
-      $this->controller = $url[0];
+    if (isset($url[0]) && file_exists('app/controller/' . ucfirst($url[0]) . '.php')) {
+      $this->controller = ucfirst($url[0]);
       unset($url[0]);
     }
 
-    require_once '../app/controller/' . $this->controller . '.php';
+    require_once 'app/controller/' . $this->controller . '.php';
     $this->controller = new $this->controller;
 
     // method

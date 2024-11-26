@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', 'http://localhost/thesiladen/public');
+define('BASE_URL', 'http://localhost/thesiladen');
 
 
 //db

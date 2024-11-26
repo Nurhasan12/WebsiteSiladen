@@ -1,11 +1,11 @@
 <div class="container mt-4">
-  <h1>This our members</h1>
+  <h1 class="title-blog">Our Proud Members</h1>
   <img src="<?= BASE_URL ?>/images/family.jpg" class="img-fluid img-custom mb-5" alt="Siladen img">
-  <div class="row">
+  <div class="row ">
     <?php foreach ($data['mhs'] as $mhs) : ?>
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-4 card-centerrr">
 
-        <div class="card">
+        <div class="card ">
           <div class="profile-wrapper">
             <a href="<?= BASE_URL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>"><img src="<?= BASE_URL ?>/images/uploads/<?= $mhs['photo']; ?>" alt="Profile 2" class="profile-img"></a>
 

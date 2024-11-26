@@ -20,7 +20,7 @@ class About_model
   // method untuk mengambil data blog berdasarkan id
   public function getBlogById($id_blog)
   {
-    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
+    $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_blog =:id_blog');
     $this->db->bind('id_blog', $id_blog);
     return $this->db->single();
   }

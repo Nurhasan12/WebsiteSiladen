@@ -4,12 +4,6 @@
       <img src="<?= BASE_URL ?>/images/uploads/<?= $data['mhs']['photo']; ?>" alt="Profile" class="profile-image">
       <h2 style="margin-top: 20px;"><?= $data['mhs']['name'] ?></h2>
       <p style="margin-bottom: 15px;">Pertukaran Mahasiswa 4 Universitas Sam Ratulangi</p>
-
-      <!-- <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div> -->
     </div>
 
     <div class="right-section">
